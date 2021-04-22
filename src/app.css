@@ -1,6 +1,4 @@
-body{
-    margin: 0 0 0 0;
-}
+
 .Link{
     text-decoration: none;
 }
@@ -14,17 +12,25 @@ body{
   background-size: cover;
   bottom: 0px;
 }
-.line1{
- justify-content:center;
-   margin-top: 50px;
-   border-color:#054979;
-   width: 1100px;
-   border-width: 1px;
-}
  .logo{
+    display:flex;
+    border-bottom-style: solid;
+    width:1100px;
+    border-width: 1px;
+    border-color: #054979;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo-button{
     display: flex;
-    justify-content: center;
     margin-top: 80px;
+    margin-bottom:50px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Mapping{
     margin-right:500px;
@@ -97,13 +103,6 @@ body{
     margin-top: 75px;
     left:80%;
 }
-.logo-button{
-    cursor: pointer;
-    background:transparent;
-    padding: 0;
-    border: none;
-    background: none;
-    outline: none;
-}
+
 
 

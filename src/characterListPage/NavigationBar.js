@@ -1,12 +1,9 @@
 import React from 'react'
 import localData from '../homePage/Data'
-import "./card.css"
+import "./character.css"
 import {NavLink} from 'react-router-dom'
 
-
-
-const NavigationBar = () => {
-  
+const NavigationBar = ({id}) => {
     return (
         <>
             <nav className="nav">
@@ -14,15 +11,15 @@ const NavigationBar = () => {
                        localData.map((Title,idx)=>{
                         return(
                       <ul key={idx} >
-                          <NavLink style={{color:"red"}} to= {`/${Title.title}`}>
-                              <li className="nav-list">{Title.title.toUpperCase()}</li>
+                          <NavLink className="character-link" to= {`/${Title.title}`}>
+                              <li className={(id===Title.title)?"nav-list-highlight":"nav-list"}>
+                                  {Title.title.toUpperCase()}
+                              </li>
                           </NavLink>
                        </ul>
                     )})
                 }
             </nav>
-            <hr className="line3"/>
-
         </>)
         }
 export default NavigationBar

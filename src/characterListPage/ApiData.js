@@ -1,17 +1,18 @@
-import React,{useState,useEffect,createContext} from 'react'
+import React,{useState,useEffect } from 'react'
 import axios from 'axios';
 import Loader from './Loader';
 import Routing from './Routing';
 import Button from '@material-ui/core/Button';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import "./card.css"
+import "./character.css"
 
-function ApiData({id}){
+function ApiData({dataCall,id}){
     const [isData,setIsData]=useState([])
     const [isLoading,setIsloading]=useState(true)
     const [prevURL,setPrevURL]=useState("")
     const [newURL,setNewURL]=useState('')
+    const [isId,setIsID]=useState()
 
     useEffect(()=>{
         getdata();
@@ -25,16 +26,16 @@ function ApiData({id}){
         setNewURL(res.data.next);
         return(isData);
     }
- 
     const getdata= ()=>{
         const apiURL=`http://swapi.dev/api/${id}`
+        setIsID(id);
         upDateURL(apiURL)
-   }
-console.log(isData)
+    }
+   dataCall(isData);
     return(
         <>
             {
-            <Routing data={isData}/>
+                <Routing id={isId}  data={isData}/>    
             }
             <div className="button">
                 <div className="button-left">
@@ -62,5 +63,6 @@ console.log(isData)
     )
 }
 export default ApiData
+
 
 
