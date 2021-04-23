@@ -1,9 +1,9 @@
 import React from 'react'
 import {Route} from 'react-router-dom';
-import Mapping from './homePage/Mapping'
-import Header from './homePage/Header';
-import Footer from './homePage/Footer';
-import SecondPage from './characterListPage/secondPage';
+import Mapping from './homePage/homepage/Mapping'
+import Header from './homePage/header/Header';
+import Footer from './homePage/footer/Footer';
+import SecondPage from './characterListPage/listPage/secondPage';
 import "./app.css";
 
 const App = () => {

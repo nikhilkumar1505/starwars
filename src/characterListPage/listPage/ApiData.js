@@ -1,7 +1,6 @@
 import React,{useState,useEffect } from 'react'
 import axios from 'axios';
-import Loader from './Loader';
-import Routing from './Routing';
+import CharacterList from './CharacterList';
 import Button from '@material-ui/core/Button';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -9,15 +8,11 @@ import "./character.css"
 
 function ApiData({dataCall,id}){
     const [isData,setIsData]=useState([])
-    const [isLoading,setIsloading]=useState(true)
     const [prevURL,setPrevURL]=useState("")
     const [newURL,setNewURL]=useState('')
     const [isId,setIsID]=useState()
 
-    useEffect(()=>{
-        getdata();
-        setIsloading(false);
-    },[id])
+    useEffect(()=>{ getdata()},[id])
   
     const upDateURL=async(url)=>{
         const res= await axios.get(url)
@@ -26,16 +21,18 @@ function ApiData({dataCall,id}){
         setNewURL(res.data.next);
         return(isData);
     }
+    
     const getdata= ()=>{
         const apiURL=`http://swapi.dev/api/${id}`
         setIsID(id);
         upDateURL(apiURL)
+        
     }
    dataCall(isData);
     return(
         <>
             {
-                <Routing id={isId}  data={isData}/>    
+                <CharacterList id={isId}  data={isData}/>    
             }
             <div className="button">
                 <div className="button-left">

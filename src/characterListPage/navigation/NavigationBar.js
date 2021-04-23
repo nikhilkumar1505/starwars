@@ -1,7 +1,7 @@
 import React from 'react'
-import localData from '../homePage/Data'
-import "./character.css"
+import localData from '../../homePage/Data'
 import {NavLink} from 'react-router-dom'
+import "./navigation.css"
 
 const NavigationBar = ({id}) => {
     return (

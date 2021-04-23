@@ -1,0 +1,35 @@
+
+.Mapping{
+     display: grid;
+    position: relative;
+    width: 60%;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-flow: row;
+    grid-column-gap: 94px;
+    justify-content: center;
+}
+.character{
+    margin-bottom: 84px;
+    margin-left: 94px;
+}
+.avatar{
+    width: 160px;
+  height: 160px;
+  position: relative;
+}
+.avatar-title{
+    color: #ffffff;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+  top: -10px;
+}
+
+.Link{
+    text-decoration: none;
+}

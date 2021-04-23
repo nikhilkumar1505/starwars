@@ -1,10 +1,5 @@
 
-.Link{
-    text-decoration: none;
-}
 .container{
-  margin: 0;
-  padding: 0;
   background: url(./background.png) no-repeat ;
   position: absolute;
   min-width: 100%;
@@ -12,97 +7,7 @@
   background-size: cover;
   bottom: 0px;
 }
- .logo{
-    display:flex;
-    border-bottom-style: solid;
-    width:1100px;
-    border-width: 1px;
-    border-color: #054979;
-    margin-left: auto;
-    margin-right: auto;
-}
-.logo-button{
-    display: flex;
-    margin-top: 80px;
-    margin-bottom:50px;
-    cursor: pointer;
-    border: none;
-    background: none;
-    outline: none;
-    margin-left: auto;
-    margin-right: auto;
-}
-.Mapping{
-    margin-right:500px;
-    position: relative;
-    bottom: -15px;
-    width: 60%;
-    height: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-auto-flow: row;
-    grid-column-gap: 94px;
-    justify-content: center;
-}
-.character{
-    margin-bottom: 84px;
-    margin-left: 94px;
-}
-.avatar{
-    width: 160px;
-  height: 160px;
-  position: relative;
-}
-.avatar-title{
-    color: #ffffff;
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-size: 18px;
-  text-align: center;
-  position: relative;
-  top: -10px;
-}
-.footer{
-    position: fixed;
-    margin-top: 176px;
-    margin-left: 150px;
-    bottom: 0px;
-}
-.footer-logo{
-    position: absolute;
-    margin-left: 404px;
-}
-.footer-nav{
-    margin-left: 164px;
-    position: relative;
-    height: 15px;
-    left: 443px;
-    display:block;
-   
-}
-.footer-list{
-    float:left;
-    text-align: center;
-    position: relative;
-    display:inline-flex;
-    color: #1b6ba2;
-    font-family: "Open Sans";
-    font-weight: 600;
-    font-size: 14px;
-    padding:22px;
-}
-.footer-company{
-    color: #49586b;
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 14px;
-    display: flex;
-    position: relative;
-    margin-top: 75px;
-    left:80%;
-}
+
 
 
 

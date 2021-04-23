@@ -1,19 +1,18 @@
 import React,{useState} from 'react'
+import "./homePage.css"
 
-const Styling = ({Data}) => {
+const Avatar = ({Data}) => {
     const {img,title,hoverImg}=Data;
     const [isHover,setHover]=useState(false);
-    const mouseOver=(e)=>{
-        setHover(true)
+    const hover=()=>{
+        setHover(prevVal=>!prevVal)
     }
-    const mouseOut=(e)=>{
-        setHover(false)
-    }
+   
     return (
        <>
             <div className="characters">
                 <div className="character">
-                    <img onMouseOver={mouseOver} onMouseOut={mouseOut} className="avatar"src={isHover?hoverImg:img} alt="avatar"/>
+                    <img onMouseOver={hover} onMouseOut={hover} className="avatar"src={isHover?hoverImg:img} alt="avatar"/>
                     <p className="avatar-title">{title.toUpperCase()}</p>
                 </div>
             </div>
@@ -21,4 +20,4 @@ const Styling = ({Data}) => {
     )
 }
 
-export default Styling
+export default Avatar

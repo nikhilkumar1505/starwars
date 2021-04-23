@@ -1,7 +1,7 @@
 .character-box{
     position: relative;
     width: 1100px;
-    height:550px;
+    height:520px;
     top: -35px;
     margin : 0px auto 0px auto;
     box-sizing: border-box;
@@ -12,36 +12,43 @@
   background-color: rgba(117, 188, 255,35%);
   position: relative;
   width: 80%;
-  margin-top:10px;
-  height: 80%;
+  margin-top:5px;
+  height: 75%;
   left: 10%;
   overflow-x: hidden;
 }
 .title{
     text-align:center;
-    top: -4%;
     height: 12%;
     align-items:center;
     font-size:40px;
     font-family: 'Open Sans';
     font-weight: bold;
     color: #ffffff;
-    top:20px;
+ 
     padding-bottom: 20px;
 }
 .character-details{
-  color: #ffffff;
+  color: #c0c7cc;
   font-family: "Open Sans";
-  font-weight: 600;
+  font-weight: 300;
   list-style-type: none;
   font-size: 22px;
   justify-content: space-around;
 }
 .details-list{
   display:block;
-  color: #c0c7cc;
-  font-family: "Open Sans";
-  font-weight: 300;
-  font-size: 22px;
   justify-content: space-around;
+}
+::-webkit-scrollbar{
+  width:16px;
+  
+}
+::-webkit-scrollbar-thumb{
+  background: #00a8ff;
+  border-radius:16px;
+  
+}
+::-webkit-scrollbar-thumb:hover{
+   background: #00a8ff;
 }

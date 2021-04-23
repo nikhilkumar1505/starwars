@@ -1,15 +1,16 @@
 import React from "react"
-import Styling from './Styling'
-import Data from './Data'
+import Avatar from './Avatar'
+import Data from '../Data'
 import {Link} from "react-router-dom";
-import "../app.css"
+import "./homePage.css"
+
 function Mapping(){
     return(
       <div className="Mapping">
         {Data.map((val,ind)=>{
           return(
             <Link className="Link" key={ind} to={`/${val.title}`}>
-            <Styling key={ind} Data={val}/>
+            <Avatar key={ind} Data={val}/>
             </Link>
           )
         })}

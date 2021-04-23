@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 import {useParams,Route} from 'react-router-dom'
 import ApiData from './ApiData'
-import NavigationBar from './NavigationBar'
-import Details from "../characterDetails/Details"
+import NavigationBar from '../navigation/NavigationBar'
+import Details from "../../characterDetails/details/Details"
 
 function SecondPage()  {
     const [rtndata,setRtnData]=useState([])

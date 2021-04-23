@@ -1,0 +1,46 @@
+.footer{
+    position: fixed;
+    margin-top: 176px;
+    margin-left: 150px;
+    bottom: 0px;
+}
+.footer-logo{
+    position: absolute;
+    margin-left: 404px;
+}
+.footer-nav{
+    margin-left: 164px;
+    position: relative;
+    height: 15px;
+    left: 443px;
+    display:block;
+}
+.footer-list{
+    float:left;
+    text-align: center;
+    position: relative;
+    display:inline-flex;
+    color: #1b6ba2;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 14px;
+    padding:22px;
+}
+.footer-company{
+    color: #49586b;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    position: relative;
+    margin-top: 75px;
+    left:80%;
+}
+.line2{
+    margin-top: 150px;
+    border-color:#054979;
+    width: 100%;
+    border-width: 1px;
+    position:absolute;
+    bottom:170px
+ }
